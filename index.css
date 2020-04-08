@@ -1,0 +1,232 @@
+body {
+font-family: 'Barlow', Arial,Helvetica,sans-serif;
+font-size: large;
+box-sizing: border-box;
+margin: 0px;
+
+
+}
+
+header {
+  background-color: #263238;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+nav ul {
+	list-style-type: none;
+
+}
+nav ul li {
+	display: inline;
+	padding: 5px 15px 5px 15px;
+}
+
+nav ul li a:link, nav ul li a:visited {
+	text-decoration: none;
+  color: #F2F3F4;
+}
+nav ul li a:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+img#logo {
+  position: absolute;
+  right: 9%;
+  top: 0%;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.9;
+  animation: fromleft 2s ease normal;
+}
+@keyframes fromright {
+  from {transform: translateX(-100%);}
+   to {transform: translateX(0%);}
+ }
+
+ @keyframes fromleft {
+   from {transform: translateX(150%);}
+    to {transform: translateX(0%);}
+  }
+  @keyframes frombottom {
+    from {transform: translateY(-100%);}
+     to {transform: translateY(0%);}
+   }
+  @keyframes fromtop{
+    from {transform: translateY(100%);}
+     to {transform: translateY(0%);}
+  }
+
+section#image1 {
+  position: relative;
+  background-image: url(images/image1.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 25%;
+  text-align: center;
+  animation: fromleft 1s ease normal;
+
+}
+
+
+section#image1 h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 500%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+  line-height: 1.2;
+  animation: fromright 2s ease normal;
+
+
+}
+section#image1 p {
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-size: 150%;
+  text-transform: uppercase;
+  color: white;
+  animation: fromright 2s ease normal;
+}
+ section#quote {
+   background-color: #263238;
+   text-align: center;
+   padding: 35px 60px 35px 60px;
+   color: white;
+   font-size: 200%;
+}
+
+
+ section#videos {
+   display: flex;
+  flex-flow: row wrap;
+   background-color: #37474F;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   line-height: 1.8;
+
+ }
+
+#video1, #video2 {
+  display: flex;
+  width: auto;
+  height: 50vh;
+  flex: 1;
+  padding: 20px;
+
+ }
+ video {
+   border-radius: 15px;
+ }
+ section#videos h2 {
+   flex: 1;
+ }
+
+
+ footer > section:first-child {
+   background-color: #37474F;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   color: #F2F3F4;
+ }
+ footer > section:last-child {
+   background-color: #263238;
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   line-height: 1.8;
+   text-transform: uppercase;
+ }
+ footer ul li {
+   display: inline;
+   list-style-type: none;
+   padding: 5px 15px 5px 15px;
+
+ }
+footer div#links ul li a:link, footer div#links ul li a:visited  {
+  color: #F2F3F4;
+
+}
+footer div#links ul li a:hover {
+  color: white;
+  font-weight: bold;
+
+}
+footer div#logos ul li a:link, footer div#logos ul li a:visited {
+  text-decoration: none;
+
+}
+footer div#logos ul li img {
+  width: auto;
+  height: 8vh;
+
+}
+footer div#copyright {
+  font-size: 85%;
+  text-transform: none;
+
+}
+div#formnotification form {
+  width: 350px;
+  background-color: gray;
+  border: thin black;
+  padding: 10px 5px 10px 5px;
+  margin: auto;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 80%;
+
+}
+
+
+input#email {
+  min-width: 250px;
+  border: none;
+  font-size: 70%;
+  background-color: gray;
+  margin: auto;
+  color: white;
+}
+input#submit {
+  width: 300px;
+  height: 40px;
+  margin: auto;
+  background-color: #455A64;
+  border: none;
+  font-size: 130%;
+  color: white;
+
+}
+
+section#training {
+  background-color: #263238;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10%;
+  align-items: baseline;
+  text-align: center;
+  color: white;
+  padding: 9% 12% 9% 12%;
+
+
+}
+section#training p {
+  line-height: 1.5;
+}
+
+img.icons {
+  max-width: 100%;
+  height: auto;
+  border-radius: 7px 7px 7px 7px;
+-moz-border-radius: 7px 7px 7px 7px;
+-webkit-border-radius: 7px 7px 7px 7px;
+-webkit-box-shadow: -5px -2px 63px -66px rgba(176,190,197,1);
+-moz-box-shadow: -5px -2px 63px -66px rgba(176,190,197,1);
+box-shadow: -5px -2px 63px -66px rgba(176,190,197,1);
+  opacity: 0.7;
+}
