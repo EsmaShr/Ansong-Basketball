@@ -2,7 +2,7 @@ body {
 font-family: 'Barlow', Arial,Helvetica,sans-serif;
 font-size: large;
 box-sizing: border-box;
-margin: 0px;
+margin: 0;
 
 }
 
@@ -33,7 +33,7 @@ nav ul li a:hover {
 img#logo {
   position: absolute;
   right: 9%;
-  top: 0%;
+  top: 0;
   max-width: 100%;
   height: auto;
   opacity: 0.9;
