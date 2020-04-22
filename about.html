@@ -2,26 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="about.css">
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Anton|Barlow&display=swap');
-</style>
-    <title>Ansong Basketball</title>
+    <link rel="stylesheet" media="screen and (max-width:768px" href="mobile.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap" rel="stylesheet">
+
+    <title>Ansong Basketball | Welcome</title>
   </head>
   <body>
-    <header id="header">
-    <nav>
-  	<ul>
-  		<li><a href="index.html">WELCOME</a></li>
-  		<li><a href="about.html">ABOUT</a></li>
+    <nav id="navbar">
+      <div class="container">
+        <a href="index.html"><img class="logo"src="images/IMG_05852.jpg" alt="Ansong Basketball"></a>
+        
+        <ul>
+      <li><a href="index.html" >WELCOME</a></li>
+  		<li><a href="about.html" class="current">ABOUT</a></li>
   		<li><a href="training.html">TRAINING</a></li>
-  		<li><a href="pricing.html">PLANS AND PRICING</a></li>
-      	<li><a href="tutorials.html">TUTORIALS</a></li>
-  		<li><a href="locations">LOCATIONS</a></li>
-  	</ul>
-  	</nav>
-    <img id="logo"src="images/IMG_05852.jpg" alt="Ansong Basketball">
-  </header>
+      <li><a href="tutorials.html">TUTORIALS</a></li>
+  		<li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+      </div>
+      </nav>
 
   <div id="title">
     <h1>ANSONG BASKETBALL</h1>
@@ -49,50 +51,51 @@
     <hr>
     <p>  <q>The most important thing is to try and inspire people so that they can be great in whatever they want to do.</q><br> -Kobe Bryant</p>
   </div>
+  <footer id="main-footer" class="py-2">
+    <div class="container footer-container">
+      <div>
+        <h3>Turn On Events Notifications</h3>
+        <form action="">
+          <input type="email" placeholder="Enter Email...">
+          <input type="submit" value="Subscribe" class="btn btn-primary">
+        </form>
+      </div>
 
-
-  <footer>
-    <section>
-
-    <div id="formnotification">
-      <form action="/my-handling-form-page" method="post">
-      <p>  Turn On Events Notifications </p>
-
-       <label for="email">Email: </label>
-        <input id="email" type="email" name="email" placeholder="Email Adress" ><br>
-
-        <hr>
-        <p>
-            <input id="submit" type="submit" value="Suscribe">
-        </p>
-
-      </form>
-    </div>
-    </section>
-
-    <section>
-
-    <div id="links">
-      <ul>
+    <div>
+     
+      <ul class="list">
         <li><a href="#">Upcoming Events</a></li>
         <li><a href="#">Clientele</a></li>
         <li><a href="#">In the news</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
 
     </div>
-    <div id="logos">
-      <ul>
-        <li><a href="#header"><img src="images/IMG_05852.png" alt="Ansong Basketball"></a></li>
-        <li><a href="https://www.instagram.com/ansongbasketball/"><img src="images/instagram.png" alt="Ansong Basketball Instagram"></a></li>
-        <li><a href="https://www.facebook.com/ansongbasketball/"><img src="images/facebook.png" alt="Ansong Basketball Facebook"></a></li>
-        <li><img src="images/twitter.png" alt="Ansong Basketball Twitter"></li>
-      </ul>
+    
+      <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/ansongbasketball/" target="blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a href="http://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/ansongbasketball/" target="blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a href="http://youtube.com" target="blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+        </ul>
+        
+      </div>
+      <div>
+        <a href="index.html"><img src="images/IMG_05852.png" alt="Ansong Basketball"></a>
 
-    </div>
+      </div>
+      
+   
     <div id="copyright">
-      All Right Reserved&copy;2020 Ansong Basketball
+      <p>
+        Copyright &copy; 2020. All Rights Reserved Ansong Basketball.
+      </p>
     </div>
-    </section>
+    </div>
   </footer>
-</body>
+
+
+  <script src="https://kit.fontawesome.com/d1275efe7c.js" crossorigin="anonymous"></script>
+  </body>
 </html>

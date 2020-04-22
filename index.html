@@ -2,26 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" media="screen and (max-width:768px" href="mobile.css">
     <link rel="stylesheet" href="index.css">
-    <style>
-@import url('https://fonts.googleapis.com/css?family=Anton|Barlow&display=swap');
-</style>
-    <title>Ansong Basketball</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit|Roboto&display=swap" rel="stylesheet">
+
+    <title>Ansong Basketball | Welcome</title>
   </head>
   <body>
-    <header id="header">
-    <nav>
-  	<ul>
-  		<li><a href="index.html">WELCOME</a></li>
+    <nav id="navbar">
+      <div class="container">
+        <a href="index.html"><img class="logo"src="images/IMG_05852.jpg" alt="Ansong Basketball"></a>
+        
+        <ul>
+      <li><a href="index.html" class="current">WELCOME</a></li>
   		<li><a href="about.html">ABOUT</a></li>
   		<li><a href="training.html">TRAINING</a></li>
-  		<li><a href="pricing.html">PLANS AND PRICING</a></li>
-      	<li><a href="tutorials.html">TUTORIALS</a></li>
-  		<li><a href="locations">CONTACTS</a></li>
-  	</ul>
-  	</nav>
-      <img id="logo"src="images/IMG_05852.jpg" alt="Ansong Basketball">
-  </header>
+      <li><a href="tutorials.html">TUTORIALS</a></li>
+  		<li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+      </div>
+      </nav>
+
+    
   <section id="image1">
 
     <h1>Michael Ansong</h1>
@@ -29,96 +33,113 @@
 
   </section>
   <section id="quote">
-    <blockquote>
-    <p>  Never let fundamentals and building skills take a backseat to game planning.
-       Game plans win games. Fundamentals win championships.</p>
+    
+    <p>  <q> Never let fundamentals and building skills take a backseat to game planning.
+       Game plans win games. Fundamentals win championships. </q></p>
        <p>-Tom Crean</p>
 
-    </blockquote>
+    
   </section>
   <section id="videos">
 
 
-   <video id="video1" autoplay loop muted>
+   <div class="video">
+    <video id="video1" autoplay loop muted>
 
-        <source src="videos/IMG_1311.mp4" type="video/mp4">
-    </video>
+      <source src="videos/IMG_1311.mp4" type="video/mp4">
+  </video>
+  </div>
 
-  <h2>COME TRAIN WITH US, <br> WATCH WORKOUTS AND TECHNIQUES</h2>
+  <div>
+    <h2>COME TRAIN WITH US, <br> WATCH WORKOUTS AND TECHNIQUES</h2>
+    <button class="btn btn-light">
+      <a href="tutorials.html"> Show More </a>
+    </button>
+  </div>
 
-    <video id="video2" autoplay loop muted>
-          <source src="videos/IMG_0002.mp4" type="video/mp4">
-    </video>
+
+    <div class="video">
+      <video id="video2" autoplay loop muted>
+        <source src="videos/IMG_0002.mp4" type="video/mp4">
+  </video>
+
+    </div>
 
   </section>
   <section id="training">
-    <div class="">
-      <img class="icons" src="images/private.png" alt="private">
+    <div class="box">
+      <a href="training.html">
+      <i class="fas fa-user fa-5x"></i>
       <h3>PRIVATE TRAINING</h3>
       <p>Training session with coach Mike in a private 1-on-1 setting.
         All private sessions are one hour workout. These workouts are booked at a first come first serve basis.</p>
+      </a>
     </div>
-    <div class="">
-      <img class="icons" src="images/semi.png" alt="semi-private">
+    <div class="box">
+      <a href="training.html">
+      <i class="fas fa-user-friends fa-5x"></i>
       <h3>SEMI-PRIVATE TRAINING</h3>
       <p>We offer Middle School &amp; High School Semi-Private Groups.
         These workouts are booked at a first come first serve basis.</p>
+      </a>
     </div>
-    <div class="">
-      <img class="icons" src="images/team.png" alt="team">
+    <div class="box">
+      <a href="training.html">
+      <i class="fas fa-users fa-5x"></i>
       <h3>TEAM TRAINING</h3>
       <p>We offer team training for Middle School, High School &amp; Travel Basketball.
         Each team session can range from one from to two hours.</p>
+      </a>
     </div>
 
 
   </section>
 
-  <footer>
-    <section>
+  <footer id="main-footer" class="py-2">
+    <div class="container footer-container">
+      <div>
+        <h3>Turn On Events Notifications</h3>
+        <form action="">
+          <input type="email" placeholder="Enter Email...">
+          <input type="submit" value="Subscribe" class="btn btn-primary">
+        </form>
+      </div>
 
-    <div id="formnotification">
-      <form action="/my-handling-form-page" method="post">
-      <p>  Turn On Events Notifications </p>
-
-       <label for="email">Email: </label>
-        <input id="email" type="email" name="email" placeholder="Email Adress" ><br>
-
-        <hr>
-        <p>
-            <input id="submit" type="submit" value="Suscribe">
-        </p>
-
-      </form>
-    </div>
-    </section>
-
-    <section>
-
-    <div id="links">
-      <ul>
+    <div>
+     
+      <ul class="list">
         <li><a href="#">Upcoming Events</a></li>
         <li><a href="#">Clientele</a></li>
         <li><a href="#">In the news</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
 
     </div>
-    <div id="logos">
-      <ul>
-        <li><a href="#header"><img src="images/IMG_05852.png" alt="Ansong Basketball"></a></li>
-        <li><a href="https://www.instagram.com/ansongbasketball/"><img src="images/instagram.png" alt="Ansong Basketball Instagram"></a></li>
-        <li><a href="https://www.facebook.com/ansongbasketball/"><img src="images/facebook.png" alt="Ansong Basketball Facebook"></a></li>
-        <li><img src="images/twitter.png" alt="Ansong Basketball Twitter"></li>
-      </ul>
+    
+      <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/ansongbasketball/" target="blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+          <li><a href="http://twitter.com" target="blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/ansongbasketball/" target="blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+          <li><a href="http://youtube.com" target="blank"><i class="fab fa-youtube fa-2x"></i></a></li>
+        </ul>
+        
+      </div>
+      <div>
+        <a href="#navbar"><img src="images/IMG_05852.png" alt="Ansong Basketball"></a>
 
-    </div>
+      </div>
+      
+   
     <div id="copyright">
-      All Right Reserved&copy;2020 Ansong Basketball
+      <p>
+        Copyright &copy; 2020. All Rights Reserved Ansong Basketball.
+      </p>
     </div>
-    </section>
+    </div>
   </footer>
 
 
-
+  <script src="https://kit.fontawesome.com/d1275efe7c.js" crossorigin="anonymous"></script>
   </body>
 </html>
