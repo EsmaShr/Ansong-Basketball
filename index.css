@@ -64,7 +64,7 @@ h1, h3, h4, h5, h6 {
 
 .btn-light {background: var(--light-color);}
 .btn-light:hover { background:  #CD6155 ;}
-.btn-primary {background: #CD6155 ;}
+.btn-primary {background: #CD6155 !important;}
 .btn-secondary {background: var(--secondary-color);}
 
 .btn:hover {
@@ -308,6 +308,7 @@ section#training {
 section#training p {
   line-height: 1.5;
 }
+
 #training .box {
   padding: 2rem;
   border: solid #CD6155 1px ;
@@ -446,6 +447,10 @@ section#imagetraining h1 {
   }
 
 }
+.option-container p a {
+  text-decoration: none;
+  color: #CD6155;
+}
 .option-container {
   padding: 1rem 3rem;
   display: grid;
@@ -495,15 +500,67 @@ hr{
 /* contact page */
 
 #contact-form {
+  font-family: 'Robot', sans-serif;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin: 3rem auto ;
+  max-width: 1000px;
+  color: #34495E;
+  
 
+}
+#contact-form .form-container p {
+  color: #455A64;
+  padding: 2rem auto;
+  margin: 1rem auto;
+ line-height: 1.7rem;
+  
+  
+}
+#contact-form .form-container h1 {
+  font-size: 3rem;
 }
 #contact-form .form-container form {
+
+  font-size: 1rem;
+  
+
+}
+
+#contact-form .form-container form .names {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 0.3rem;
+  
+}
 
+#contact-form .form-container form .names h3 {
+  margin: 0.5rem;
+}
+
+#contact-form .form-container form .fst-lst-name {
+  font-size: 0.4rem;
+  margin-top: 0;
+}
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  
+  border: 1px #ddd solid;
+  font-size: 18px;
+  border: var(--light-color) dotted thin;
+  padding: 0.7rem;
+  margin-bottom: 1.2rem;
+  
+  background-color: #F2F3F4 ;
 
 }
-#contact-form .form-container form .names {
-  display: flex;
-  flex-direction: row;
+#contact-form .form-container form .names input {
+  margin: 0.5rem auto;
 }
+#contact-form label {
+  display: block;
+}
+  
