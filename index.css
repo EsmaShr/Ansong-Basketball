@@ -499,6 +499,7 @@ hr{
 }
 #contact-form .form-container form {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
 
 }
