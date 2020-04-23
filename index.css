@@ -37,7 +37,7 @@ p {
   position: sticky;
 
 }
-h1, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0.8rem;
   line-height: 1.3;
@@ -563,7 +563,7 @@ hr{
 #contact-form label {
   display: block;
 }
-#contact-form > *:last-child {
+#contact-form > *:nth-child(2) {
   text-align: left;
   grid-column: 2/3;
   grid-row: 1/2;
@@ -573,7 +573,7 @@ hr{
   padding-bottom: 3rem;
   color: #455A64;
 }
-#contact-form > *:last-child > div {
+#contact-form  > *:nth-child(2)  > div {
   display: inline-block;
   color: #fff;
   font-size: .85rem;
@@ -585,13 +585,24 @@ hr{
   
 }
 
-#contact-form > *:last-child h1 {
+#contact-form > *:nth-child(2)  h1,
+#contact-form div#locations h2 {
   font-size: 1.1rem;
   font-weight: bold;
   padding-top: 0.5rem;
+  color: #273746;
 }
 
-#contact-form > *:last-child h1 span {
+#contact-form > *:nth-child(2) h1 span {
   font-size: 0.9rem;
   font-weight: normal;
+}
+#contact-form div#locations {
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+}
+#contact-form div#locations p a{
+  color: #455A64;
+
 }
