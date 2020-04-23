@@ -502,15 +502,15 @@ hr{
 #contact-form {
   font-family: 'Robot', sans-serif;
   display: grid;
-  grid-template-columns: 3fr 2fr;
-  margin: 3rem auto ;
-  max-width: 1000px;
-  color: #34495E;
+  grid-template-columns: 3fr 1.8fr;
+  grid-gap: 3rem;
+  margin: 3rem 10rem ;
+  max-width: 100%;
+  color: #455A64;
   
 
 }
 #contact-form .form-container p {
-  color: #455A64;
   padding: 2rem auto;
   margin: 1rem auto;
  line-height: 1.7rem;
@@ -563,4 +563,35 @@ hr{
 #contact-form label {
   display: block;
 }
+#contact-form > *:last-child {
+  text-align: left;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+  border: dotted #455A64 2px ;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  color: #455A64;
+}
+#contact-form > *:last-child > div {
+  display: inline-block;
+  color: #fff;
+  font-size: .85rem;
+  text-transform: uppercase;
+  padding: 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  background-color: #003366 ;
   
+}
+
+#contact-form > *:last-child h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+
+#contact-form > *:last-child h1 span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
