@@ -686,6 +686,7 @@ section#tuto-page {
   background-color: #ECEFF1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0rem;
 
 }
 #home-articles .container .article-container .articles {
@@ -696,7 +697,7 @@ section#tuto-page {
   justify-content: center;
   border-radius: 7px;
   background-color: #fff;
-  margin: 2rem;
+  margin: 1.5rem;
   padding: 1rem;
 
 
