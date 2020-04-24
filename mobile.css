@@ -32,6 +32,16 @@ section#videos {
 section#image1 h1 {
   font-size: 300%;
 }
+
+
+/* image different for smartphone */
+section#image1 {
+  
+  background-image: url(images/Image12.jpg);
+ 
+
+}
+
 /* about page */
 section#about {
   grid-template-columns: 1fr;
@@ -95,6 +105,12 @@ div.options {
 }
 section#tuto-page {
   font-size: 2rem;
+}
+section#image1 {
+  
+  background-image: url(images/Image123.jpg);
+ 
+
 }
 
 }
