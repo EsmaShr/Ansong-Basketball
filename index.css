@@ -52,10 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   display: inline-block;
   border: none;
-  font-size: 18px;
+  font-size: 1.1rem;
   background: var(--dark-color);
   color: #fff;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem;
   margin-top: 0.7rem;
   
 }
@@ -108,10 +108,11 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 6fr;
   padding: 0.5rem 4rem;
   align-items: center;
+  
 
 }
 #navbar .logo {
-  height: 70px;
+  height: 11vh;
   border-radius: 1.5px;
 
 }
@@ -190,9 +191,9 @@ section#image1 p {
  section#quote {
    background-color: var(--primary-color);
    text-align: center;
-   padding: 5rem 5rem;
+   padding: 4rem;
    color: #fff;
-   line-height: 1.8;
+   line-height: 1.7;
    
 
 }
@@ -211,6 +212,11 @@ section#quote p {
    padding: 3rem 5rem;
 
  }
+ section#videos > *:nth-child(2) {
+  margin: 1.5rem;
+
+}
+
  #video1, #video2 {
   display: flex;
   width: auto;
@@ -297,11 +303,12 @@ section#training {
   background-color: var(--primary-color) ;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1.5rem;
+  grid-gap: 2rem;
   align-items: baseline;
   text-align: justify;
   color: white;
   padding: 5rem 8rem;
+  
 
 
 }
@@ -313,8 +320,10 @@ section#training p {
   padding: 2rem;
   border: solid #CD6155 1px ;
   background: var(--secondary-color);
-  height: 325px;
+  height: 22rem;
   border-radius: 0.5rem;
+  
+
 
 }
 #training .box h3 {
@@ -325,17 +334,30 @@ section#training p {
   opacity: 0.7;
 
 }
-img.icons {
-  max-width: 100%;
-  height: auto;
-  border-radius: 7px 7px 7px 7px;
--moz-border-radius: 7px 7px 7px 7px;
--webkit-border-radius: 7px 7px 7px 7px;
--webkit-box-shadow: -5px -2px 63px -66px rgba(176,190,197,1);
--moz-box-shadow: -5px -2px 63px -66px rgba(176,190,197,1);
-box-shadow: -5px -2px 63px -66px rgba(176,190,197,1);
-  opacity: 0.7;
+@media screen and (max-width: 1024px) { 
+
+  section#training {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 3rem;
+    
+  }
+  #training .box {
+    height: 20hv;
+    padding: 2rem 2rem 0;
+  }
+  section#videos {
+    flex-direction: column;
+    padding: 1rem;
+    
+  }
 }
+#videos div h2 {
+  font-size: 1rem;
+}
+
+}
+
 /* about page */
 div#title {
   position: relative;
@@ -375,25 +397,25 @@ div#quote {
 section#about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 2rem;
   grid-auto-columns: minmax(100px, auto);
   margin: 2% 14% 3% 14%;
   line-height: 1.8;
-  text-align: left;
+ 
   align-items: flex-start;
   color: #78909C;
-  font-size: 90%
+  font-size: 90%;
 
 }
 
 section#about img {
   position: relative;
-  max-width: 100%;
+  max-width: 25vw;
   height: auto;
   border-style: double;
   border-color: #37474F;
   border-width: thick;
-  margin-top: 20px;
+  margin-top: 1.1rem;
   animation-name: fromright;
   animation-duration: 2s;
   animation-timing-function: ease;
@@ -403,17 +425,19 @@ section#about img {
 section#about div#imageabout span {
   font-weight: bold;
   color: #455A64;
-  font-size: 130%;
+  font-size: 1.2rem;
   animation-name: fromright;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-direction: normal;
+  
 }
 div.fromleft {
   animation-name: fromleft;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-direction: normal;
+  text-align: justify;
 }
 /* training page */
 section#imagetraining {
@@ -422,7 +446,7 @@ section#imagetraining {
 
 }
 section#imagetraining img{
-  display: flex;
+  display: block;
   width: 100vw;
   max-height: 70vh;
   opacity: 0.9;
@@ -431,22 +455,16 @@ section#imagetraining img{
 
 }
 section#imagetraining h1 {
-  font-size: 500%;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bolder;
+  font-size: 5rem;
   
 }
 
-@media screen and (max-width: 600px) {
-  section#imagetraining h1 {
-    font-size: 150%;
-  }
-
-}
 .option-container p a {
   text-decoration: none;
   color: #CD6155;
@@ -460,13 +478,15 @@ section#imagetraining h1 {
   grid-gap: 0rem -2rem;
   margin-bottom: 3rem;
   line-height: 1.6;
+  max-width: 100vw;
+  
 }
 .option-container > *:last-child {
   text-align: left;
   grid-column: 2/3;
   grid-row: 1/3;
   align-self: flex-start;
-  border: dotted #CD6155 2px ;
+  border: dotted #CD6155 0.15rem ;
   padding: 1.5rem 1rem 3rem 1rem;
   margin-top: 3rem;
   color: #78909C;
@@ -497,6 +517,21 @@ hr{
  border-width: thin;
  border-color: #F2F3F4;
 }
+@media screen and (max-width: 1024px) { 
+  .option-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+
+  }
+  .option-container > *:last-child {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  padding: 1.5rem 1rem 3rem 1rem;
+  margin: 4rem;
+  
+  }
+
+}
 /* contact page */
 
 #contact-form {
@@ -504,14 +539,14 @@ hr{
   display: grid;
   grid-template-columns: 3fr 1.8fr;
   grid-gap: 3rem;
-  margin: 3rem 10rem ;
+  margin: 3rem 8rem;
   max-width: 100%;
   color: #455A64;
   
 
 }
 #contact-form .form-container p {
-  padding: 2rem auto;
+  padding: 1rem auto;
   margin: 1rem auto;
  line-height: 1.7rem;
   
@@ -588,7 +623,7 @@ hr{
 #contact-form > *:nth-child(2)  h1,
 #contact-form div#locations h2 {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: bolder;
   padding-top: 0.5rem;
   color: #273746;
 }
@@ -606,3 +641,85 @@ hr{
   color: #455A64;
 
 }
+#contact-form div#locations p a:hover {
+  opacity: 0.5;
+}
+
+/* tutorials page */
+section#tuto-page {
+  position: relative;
+  background-image: url(./images/tutorialpage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 25%;
+  text-align: center;
+  animation: fromleft 1s ease normal;
+  font-size: 5rem;
+  opacity: 0.9;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+/* clientele page */
+
+#home-articles {
+  position: relative;
+  max-width: 1100px;
+  margin: 2rem auto;
+  text-align: center;
+
+}
+/* #home-articles .container{
+  width: 100vh; */
+}
+#home-articles .container h1 {
+  font-size: 3rem;
+  margin: 1.2rem;
+
+}
+#home-articles .container .article-container {
+  background-color: #ECEFF1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+#home-articles .container .article-container .articles {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 0;
+  justify-content: center;
+  border-radius: 7px;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 1rem;
+
+
+
+}
+#home-articles .container .article-container .articles h3 {
+   grid-row: 1/2;
+   grid-column: 1/2;
+   color: #273746;
+  }
+  #home-articles .container .article-container .articles div {
+   grid-row: 2/3;
+   grid-column: 1/2;
+   color: #FDD835;
+}
+  #home-articles .container .article-container .articles time {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+ #home-articles .container .article-container .articles p {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  font-size: 0.9rem;
+  line-height: 1.4;
+ }
+ #home-articles .container .article-container .articles > *:last-child {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  color: #FFAB91;
+ }

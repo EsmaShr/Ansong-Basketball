@@ -1,0 +1,41 @@
+
+  section#imagetraining h1 {
+    font-size: 2.5rem ;
+  }
+
+
+@media screen and (max-width: 600px) {
+  section#imagetraining h1 {
+    font-size: 2rem ;
+  }
+}
+  
+/* navbar */
+#navbar .container {
+  grid-template-columns: 1fr;
+  grid-gap: 1.2rem;
+  padding: 1rem;
+}
+#navbar ul,
+#navbar .logo {
+  justify-self: center;
+ 
+}
+#navbar ul li a {
+  padding: .5rem;
+
+}
+section#quote {
+  padding: 2rem;
+}
+section#quote p {
+  font-size: 1.3rem;
+}
+section#videos {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+
+
