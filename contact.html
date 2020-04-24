@@ -38,18 +38,18 @@
       <h1><span class="text-primary">Train </span> With Us</h1>
       <p>Please fill out the following informations to inquire about our training sessions.</p>
 
-      <form action="process.php">
+      <form name="contact" method="POST" data-netlify="true">
 
 
         <div class="names">
           
           <div>
             <h3>Parent Name</h3>
-            <input type="text" name="name" id="prt-fst" required>
+            <input type="text" name="prt-fst-name" id="prt-fst" required>
             <label for="name" class="fst-lst-name">First Name</label>
   
           
-            <input type="text" name="name" id="prt-lst" required>
+            <input type="text" name="prt-lst-name" id="prt-lst" required>
             <label for="name" class="fst-lst-name">Last Name</label>
   
           </div>
@@ -58,11 +58,11 @@
           
         <div>
           <h3>Player Name</h3>
-          <input type="text" name="name" id="ply-fst" required> 
+          <input type="text" name="ply-fst-name" id="ply-fst" required> 
           <label for="name" class="fst-lst-name">First Name</label>
 
         
-          <input type="text" name="name" id="ply-lst" required> 
+          <input type="text" name="ply-lst-name" id="ply-lst" required> 
           <label for="name"class="fst-lst-name">Last Name</label>
 
         </div>
@@ -125,8 +125,8 @@
     <div class="container footer-container">
       <div>
         <h3>Turn On Events Notifications</h3>
-        <form action="">
-          <input type="email" placeholder="Enter Email...">
+        <form name="notifications" method="POST" data-netlify="true">
+          <input name="email" type="email" placeholder="Enter Email...">
           <input type="submit" value="Subscribe" class="btn btn-primary">
         </form>
       </div>
