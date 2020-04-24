@@ -1,28 +1,22 @@
 
-  section#imagetraining h1 {
-    font-size: 2.5rem ;
-  }
 
-
-@media screen and (max-width: 600px) {
-  section#imagetraining h1 {
-    font-size: 2rem ;
-  }
-}
-  
 /* navbar */
 #navbar .container {
   grid-template-columns: 1fr;
   grid-gap: 1.2rem;
   padding: 1rem;
+  height: 18vh;
 }
 #navbar ul,
 #navbar .logo {
   justify-self: center;
+  height: 9vh;
  
 }
+
 #navbar ul li a {
-  padding: .5rem;
+  padding: 0.5rem;
+  padding-bottom: 0.7rem;
 
 }
 section#quote {
@@ -35,7 +29,73 @@ section#videos {
   flex-direction: column;
   padding: 1rem;
 }
+section#image1 h1 {
+  font-size: 300%;
+}
+/* about page */
+section#about {
+  grid-template-columns: 1fr;
+}
+/* training page */
 
+section#imagetraining h1 {
+  font-size: 2.5rem ;
+}
+/* contact page*/
+#contact-form {
+  grid-template-columns: 1fr;
+}
+#contact-form > *:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+/* clientele */
+#home-articles .container .article-container {
+  grid-template-columns: 1fr;
 
+}
+/* footer */
+#main-footer .footer-container img {
+  height: 7vh;
+}
+#main-footer {
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+section#imagetraining h1 {
+  font-size: 1.6rem ;
+}
+.option-container {
+  grid-gap: 0rem;
+}
+div.options {
+  color: #78909C;
+  margin: 1rem;
+}
+.option-container > *:last-child {
+  margin: 1rem;
+}
+#contact-form {
+  margin: 1.1rem;
+}
+#navbar .logo {
+  height: 7vh;
+}
+#navbar ul li a {
+  padding: 0.3rem;
+  margin: 0;
+  
+}
+#navbar .container {
+  grid-gap: 0.3rem;
+}
+#navbar ul {
+  font-size: 0.9rem;
 
+}
+section#tuto-page {
+  font-size: 2rem;
+}
+
+}
 

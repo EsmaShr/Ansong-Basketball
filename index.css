@@ -104,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 #navbar .container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 6fr;
   padding: 0.5rem 4rem;
@@ -164,6 +165,7 @@ section#image1 {
   padding: 25%;
   text-align: center;
   animation: fromleft 1s ease normal;
+  justify-content: center;
 
 }
 
@@ -351,7 +353,7 @@ section#training p {
     padding: 1rem;
     
   }
-}
+
 #videos div h2 {
   font-size: 1rem;
 }
@@ -668,6 +670,7 @@ section#tuto-page {
   max-width: 1100px;
   margin: 2rem auto;
   text-align: center;
+  justify-content: center;
 
 }
 /* #home-articles .container{
@@ -676,6 +679,7 @@ section#tuto-page {
 #home-articles .container h1 {
   font-size: 3rem;
   margin: 1.2rem;
+
 
 }
 #home-articles .container .article-container {
