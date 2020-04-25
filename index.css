@@ -412,7 +412,7 @@ section#about {
 
 section#about img {
   position: relative;
-  max-width: 25vw;
+  max-width: 300px;
   height: auto;
   border-style: double;
   border-color: #37474F;
@@ -434,12 +434,21 @@ section#about div#imageabout span {
   animation-direction: normal;
   
 }
+section#about div#imageabout:nth-child(3) {
+  text-align: center;
+}
 div.fromleft {
   animation-name: fromleft;
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-direction: normal;
   text-align: justify;
+}
+
+@media screen and (max-width: 1024px){
+  section#about {
+    grid-template-columns: 1fr;
+  }
 }
 /* training page */
 section#imagetraining {
