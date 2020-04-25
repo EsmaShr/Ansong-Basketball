@@ -442,7 +442,7 @@ div.fromleft {
   animation-duration: 3s;
   animation-timing-function: ease;
   animation-direction: normal;
-  text-align: justify;
+  text-align: left;
 }
 
 @media screen and (max-width: 1024px){

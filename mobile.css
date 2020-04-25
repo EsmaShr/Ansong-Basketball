@@ -112,6 +112,13 @@ section#image1 {
  
 
 }
+/* #video1, #video2, .video{
+  display: none;
+  visibility: hidden;
+}
+section#videos {
+  background-image: ;
+} */
 
 }
 
