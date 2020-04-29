@@ -737,3 +737,28 @@ section#tuto-page {
   grid-column: 2/3;
   color: #FFAB91;
  }
+/* news page */
+ section#in-news {
+  position: relative;
+  margin: 2rem 0;
+ 
+
+}
+section#in-news img{
+  display: block;
+  width: 100vw;
+  max-height: 70vh;
+  opacity: 0.9;
+  animation: fromleft 1s ease normal;
+ 
+
+
+}
+section#in-news h1 {
+  position: absolute
+  margin: auto;
+  color: white;
+  font-weight: bolder;
+  font-size: 5rem;
+  
+}
