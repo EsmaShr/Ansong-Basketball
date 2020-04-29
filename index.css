@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 .container { 
   max-width: 100%;
   margin: auto;
-  padding: 0 2rem;
   overflow: hidden;
 }
 .btn {
@@ -107,14 +106,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 6fr;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 1rem;
   align-items: center;
   
 
 }
 #navbar .logo {
   height: 11vh;
-  border-radius: 1.5px;
+  border-radius: 10px;
 
 }
 #navbar ul {
@@ -294,6 +293,9 @@ section#quote p {
   color: #777;
   margin-right: 0.5rem;
 }
+#main-footer .footer-container > *:nth-child(4) img {
+  border-radius: 10px;
+}
 
 
 
@@ -376,7 +378,7 @@ div#title h1 {
 }
 
  hr{
-  margin: 3% 14% 5% 14%;
+  margin: 3% 10% 5% 10%;
   border-style: solid;
   border-width: thin;
   border-color: #F2F3F4;
@@ -401,7 +403,7 @@ section#about {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   grid-auto-columns: minmax(100px, auto);
-  margin: 2% 14% 3% 14%;
+  margin: 2% 10% 3% 10%;
   line-height: 1.8;
  
   align-items: flex-start;
@@ -684,7 +686,7 @@ section#tuto-page {
 }
 /* #home-articles .container{
   width: 100vh; */
-}
+
 #home-articles .container h1 {
   font-size: 3rem;
   margin: 1.2rem;
@@ -755,7 +757,7 @@ section#in-news img{
 
 }
 section#in-news h1 {
-  position: absolute
+  position: absolute;
   margin: auto;
   color: white;
   font-weight: bolder;

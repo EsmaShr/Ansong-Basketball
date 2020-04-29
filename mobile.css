@@ -3,19 +3,19 @@
 /* navbar */
 #navbar .container {
   grid-template-columns: 1fr;
-  grid-gap: 1.2rem;
-  padding: 1rem;
   height: 18vh;
+  align-items: center;
 }
 #navbar ul,
 #navbar .logo {
   justify-self: center;
   height: 9vh;
- 
+  margin-top: 0.8rem;
+
 }
 
 #navbar ul li a {
-  padding: 0.5rem;
+  
   padding-bottom: 0.7rem;
 
 }
@@ -71,6 +71,8 @@ section#imagetraining h1 {
 #main-footer {
   font-size: 1rem;
 }
+
+
 @media screen and (max-width: 600px) {
 section#imagetraining h1 {
   font-size: 1.6rem ;
@@ -88,17 +90,28 @@ div.options {
 #contact-form {
   margin: 1.1rem;
 }
+
+#navbar .container {
+ padding-right: 2rem;
+}
+
+#navbar ul,
+#navbar .logo {
+ 
+}
+#navbar img.logo {
+  margin-bottom: 1rem;
+}
+
+#navbar ul li a {
+  
+
+
+}
 #navbar .logo {
   height: 7vh;
 }
-#navbar ul li a {
-  padding: 0.3rem;
-  margin: 0;
-  
-}
-#navbar .container {
-  grid-gap: 0.3rem;
-}
+
 #navbar ul {
   font-size: 0.9rem;
 
