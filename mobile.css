@@ -10,13 +10,13 @@
 #navbar .logo {
   justify-self: center;
   height: 9vh;
-  margin-top: 0.8rem;
+ align-self: center;
 
 }
 
-#navbar ul li a {
+#navbar ul li {
   
-  padding-bottom: 0.7rem;
+  padding-top: 1.2rem;
 
 }
 section#quote {
@@ -92,11 +92,8 @@ div.options {
 }
 
 #navbar .container {
+  
  
- padding-left: 0;
- padding-right: 0;
- margin-right: 0;
- margin-left: 0;
 }
 #navbar .container ul li:nth-child(4) {
   display: none;
@@ -108,21 +105,26 @@ div.options {
 
 }
 #navbar img.logo {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 #navbar ul li a {
+  
   
 
 
 }
 #navbar .logo {
-  height: 7vh;
+  height: 8vh;
 }
 
 #navbar ul {
   font-size: 0.9rem;
 
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 93%;
 }
 section#tuto-page {
   font-size: 2rem;
@@ -132,6 +134,10 @@ section#image1 {
   background-image: url(images/Image123.jpg);
  
 
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 
