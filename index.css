@@ -111,6 +111,27 @@ h1, h2, h3, h4, h5, h6 {
   
 
 }
+#navbar .covid {
+  background-color: #273746;
+  color: #F2F3F4;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  
+  
+}
+#navbar .covid p{
+  font-size: 0.8rem;
+}
+#navbar .covid p i {
+  color: #CD6155;
+  /* transform: scale(0.7); */
+  
+}
+#navbar .covid a {
+  color: #CD6155;
+}
 #navbar .logo {
   height: 11vh;
   border-radius: 10px;
@@ -464,7 +485,7 @@ section#imagetraining img{
   display: block;
   width: 100vw;
   max-height: 70vh;
-  opacity: 0.9;
+  opacity: 0.8;
   animation: fromleft 1s ease normal;
 
 
