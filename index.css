@@ -249,8 +249,8 @@ section#quote p {
 
  }
 .video {
-  border: solid #CD6155 1.5px ;
-  border-radius: 0.5rem;
+  border: solid #CD6155 2.1px ;
+  border-radius: 0.4rem;
   padding: 0,3rem;
 
  }
@@ -614,7 +614,7 @@ hr{
 }
 
 #contact-form .form-container form .fst-lst-name {
-  font-size: 0.4rem;
+  font-size: 0.8rem;
   margin-top: 0;
 }
 #contact-form input,

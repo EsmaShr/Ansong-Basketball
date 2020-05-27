@@ -37,14 +37,20 @@
   <body>
     <nav id="navbar">
       <div class="container">
-        <img class="logo" src="images/IMG_05852.jpg" alt="Ansong Basketball" />
+        <span
+          ><a href="index.html"
+            ><img
+              class="logo"
+              src="images/IMG_05852.jpg"
+              alt="Ansong Basketball" /></a
+        ></span>
 
         <ul>
           <li><a href="index.html" class="current">WELCOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="training.html">TRAINING</a></li>
           <li><a href="tutorials.html">TUTORIALS</a></li>
-          <li><a href="contact.html">CONTACTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
       <div class="covid">
@@ -133,7 +139,12 @@
         <div>
           <h3>Turn On Events Notifications</h3>
           <form name="notifications" method="POST" data-netlify="true">
-            <input name="email" type="email" placeholder="Enter Email..." />
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter Email..."
+              required
+            />
             <input type="submit" value="Subscribe" class="btn btn-primary" />
           </form>
         </div>
