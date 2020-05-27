@@ -90,7 +90,15 @@ div.options {
 #contact-form {
   margin: 1.1rem;
 }
-
+#main-footer .footer-container > *:first-child {
+  display: none;
+  visibility: hidden;
+}
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: stretch;
+}
 #navbar .container {
   
  
